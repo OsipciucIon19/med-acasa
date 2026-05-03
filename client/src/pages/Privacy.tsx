@@ -11,7 +11,7 @@ function Privacy() {
             <h2>1. Cine suntem</h2>
             <p>
                 <strong>MedAcasă</strong> oferă servicii medicale la domiciliu în Chișinău și suburbii. Operatorul de date cu caracter personal este MedAcasă, cu sediul în Chișinău, Republica Moldova. Pentru orice întrebare legată de prelucrarea datelor, ne poți contacta la{' '}
-                <a href="mailto:contact@medacasa.md">contact@medacasa.md</a>.
+                <a href="mailto:contact@med-acasa.md">contact@med-acasa.md</a>.
             </p>
 
             <h2>2. Ce date colectăm</h2>
@@ -69,7 +69,7 @@ function Privacy() {
             </ul>
             <p>
                 Pentru exercitarea oricărui drept, scrie-ne la{' '}
-                <a href="mailto:contact@medacasa.md">contact@medacasa.md</a>. Vom răspunde în maximum 30 de zile.
+                <a href="mailto:contact@med-acasa.md">contact@med-acasa.md</a>. Vom răspunde în maximum 30 de zile.
             </p>
 
             <h2>8. Securitatea datelor</h2>
@@ -90,7 +90,7 @@ function Privacy() {
             <h2>11. Contact</h2>
             <p>
                 Pentru orice întrebare despre confidențialitate ne poți scrie la{' '}
-                <a href="mailto:contact@medacasa.md">contact@medacasa.md</a> sau suna la{' '}
+                <a href="mailto:contact@med-acasa.md">contact@med-acasa.md</a> sau suna la{' '}
                 <a href="tel:+37378392285">078 392 285</a>.
             </p>
         </LegalPage>

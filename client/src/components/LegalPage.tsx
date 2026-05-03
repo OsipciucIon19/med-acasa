@@ -57,10 +57,10 @@ function LegalPage({ eyebrow, title, updatedAt, intro, children }: LegalPageProp
                         <span className="font-semibold text-slate-900">Întrebări?</span>{' '}
                         Ne poți scrie la{' '}
                         <a
-                            href="mailto:contact@medacasa.md"
+                            href="mailto:contact@med-acasa.md"
                             className="text-teal-700 font-semibold hover:underline"
                         >
-                            contact@medacasa.md
+                            contact@med-acasa.md
                         </a>{' '}
                         sau ne poți suna la{' '}
                         <a

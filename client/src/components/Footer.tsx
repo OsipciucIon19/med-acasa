@@ -116,13 +116,13 @@ function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="mailto:contact@medacasa.md"
+                                    href="mailto:contact@med-acasa.md"
                                     className="group flex items-start gap-3 text-slate-400 hover:text-white transition-colors"
                                 >
                                     <span className="shrink-0 w-8 h-8 rounded-lg bg-white/5 group-hover:bg-blue-500 group-hover:text-white flex items-center justify-center transition-all">
                                         <Mail size={14} />
                                     </span>
-                                    <span className="break-all">contact@medacasa.md</span>
+                                    <span className="break-all">contact@med-acasa.md</span>
                                 </a>
                             </li>
                             <li className="flex items-start gap-3">

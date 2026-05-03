@@ -33,9 +33,9 @@ const channels: Channel[] = [
     {
         icon: <Mail size={22} strokeWidth={2.2} />,
         label: 'Email',
-        value: 'contact@medacasa.md',
+        value: 'contact@med-acasa.md',
         note: 'Răspundem în 24h',
-        href: 'mailto:contact@medacasa.md',
+        href: 'mailto:contact@med-acasa.md',
         accent: 'from-blue-500 to-indigo-500',
     },
 ];

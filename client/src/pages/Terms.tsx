@@ -74,7 +74,7 @@ function Terms() {
             <h2>12. Contact</h2>
             <p>
                 Pentru întrebări legate de acești termeni, scrie-ne la{' '}
-                <a href="mailto:contact@medacasa.md">contact@medacasa.md</a> sau sună la{' '}
+                <a href="mailto:contact@med-acasa.md">contact@med-acasa.md</a> sau sună la{' '}
                 <a href="tel:+37378392285">078 392 285</a>.
             </p>
         </LegalPage>

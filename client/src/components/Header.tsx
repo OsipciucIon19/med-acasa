@@ -81,10 +81,10 @@ function Header({ scrollY }: HeaderProps) {
                                     <span>WhatsApp</span>
                                 </a>
                                 <a
-                                    href="mailto:contact@medacasa.md"
+                                    href="mailto:contact@med-acasa.md"
                                     className="hover:text-teal-600 transition-colors"
                                 >
-                                    contact@medacasa.md
+                                    contact@med-acasa.md
                                 </a>
                             </div>
                         </div>
