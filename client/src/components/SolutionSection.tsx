@@ -85,9 +85,15 @@ function SolutionSection() {
                     >
                         <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                             <img
-                                src="https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=1200&h=900&fit=crop"
+                                src="/img/solution.jpg"
+                                srcSet="/img/solution-sm.jpg 640w, /img/solution.jpg 1200w"
+                                sizes="(max-width: 1024px) 100vw, 50vw"
                                 alt="Asistentă medicală îngrijind pacient acasă"
+                                width={1200}
+                                height={2111}
                                 className="w-full h-72 sm:h-96 lg:h-[480px] object-cover transform hover:scale-105 transition-transform duration-700"
+                                loading="lazy"
+                                decoding="async"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-slate-900/30 via-transparent to-transparent"></div>
                         </div>

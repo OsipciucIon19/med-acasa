@@ -4,7 +4,7 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Inter', 'system-ui', 'sans-serif'],
+                sans: ['"Inter Variable"', 'Inter', 'system-ui', 'sans-serif'],
             },
             animation: {
                 'fade-up': 'fadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) both',

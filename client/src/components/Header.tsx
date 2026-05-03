@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, Phone, MapPin, Stethoscope, ShieldCheck, Clock, ChevronRight, MessageCircle } from 'lucide-react';
+import { Menu, X, Phone, MapPin, ShieldCheck, Clock, ChevronRight, MessageCircle } from 'lucide-react';
+import logoMark from '../assets/logo-mark.png';
 
 interface HeaderProps {
     scrollY: number;
@@ -97,15 +98,12 @@ function Header({ scrollY }: HeaderProps) {
                         }`}
                     >
                         <Link to="/" className="group flex items-center gap-2.5 sm:gap-3 shrink-0">
-                            <div className="relative w-10 h-10 sm:w-11 sm:h-11 flex items-center justify-center">
-                                <div className="absolute inset-0 bg-gradient-to-br from-teal-400 to-blue-500 rounded-xl opacity-90 group-hover:rotate-6 transition-transform duration-500"></div>
-                                <div className="absolute inset-0 bg-gradient-to-br from-teal-400 to-blue-500 rounded-xl blur-md opacity-50 group-hover:opacity-80 transition-opacity"></div>
-                                <Stethoscope
-                                    className="relative text-white"
-                                    size={22}
-                                    strokeWidth={2.4}
-                                />
-                            </div>
+                            <img
+                                src={logoMark}
+                                alt=""
+                                aria-hidden="true"
+                                className="w-11 h-11 sm:w-12 sm:h-12 object-contain drop-shadow-sm group-hover:scale-105 transition-transform duration-300"
+                            />
                             <div className="leading-tight">
                                 <h1 className="text-lg sm:text-xl lg:text-2xl font-extrabold tracking-tight">
                                     <span className="text-slate-900">Med</span>
@@ -196,10 +194,12 @@ function Header({ scrollY }: HeaderProps) {
                 >
                     <div className="flex items-center justify-between p-5 border-b border-slate-100">
                         <Link to="/" className="flex items-center gap-2.5" onClick={() => setIsOpen(false)}>
-                            <div className="relative w-10 h-10 flex items-center justify-center">
-                                <div className="absolute inset-0 bg-gradient-to-br from-teal-400 to-blue-500 rounded-xl"></div>
-                                <Stethoscope className="relative text-white" size={20} strokeWidth={2.4} />
-                            </div>
+                            <img
+                                src={logoMark}
+                                alt=""
+                                aria-hidden="true"
+                                className="w-11 h-11 object-contain drop-shadow-sm"
+                            />
                             <h2 className="font-extrabold text-lg leading-tight">
                                 <span className="text-slate-900">Med</span>
                                 <span className="gradient-text">Acasă</span>

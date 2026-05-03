@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
-import { Phone, Mail, MapPin, Stethoscope, Facebook, Instagram, MessageCircle, ArrowUpRight } from 'lucide-react';
+import { Phone, Mail, MapPin, Facebook, Instagram, MessageCircle, ArrowUpRight } from 'lucide-react';
+import logo from '../assets/logo.png';
 
 function Footer() {
     const currentYear = new Date().getFullYear();
@@ -14,18 +15,11 @@ function Footer() {
                 <div className="grid lg:grid-cols-12 gap-10 lg:gap-12 mb-12">
                     <div className="lg:col-span-4">
                         <Link to="/" className="inline-flex items-center gap-3 mb-5">
-                            <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-teal-400 to-blue-500 flex items-center justify-center shadow-glow-teal">
-                                <Stethoscope className="text-white" size={22} strokeWidth={2.2} />
-                            </div>
-                            <div className="leading-tight">
-                                <h3 className="text-xl font-extrabold">
-                                    <span className="text-white">Med</span>
-                                    <span className="text-teal-400">Acasă</span>
-                                </h3>
-                                <p className="text-[11px] text-slate-400 font-medium">
-                                    Servicii Medicale la Domiciliu
-                                </p>
-                            </div>
+                            <img
+                                src={logo}
+                                alt="MedAcasă - Servicii Medicale la Domiciliu"
+                                className="h-28 w-auto max-w-[220px] object-contain"
+                            />
                         </Link>
                         <p className="text-sm text-slate-400 leading-relaxed mb-6 max-w-sm">
                             Asistență medicală profesională la domiciliu. Confort, siguranță și

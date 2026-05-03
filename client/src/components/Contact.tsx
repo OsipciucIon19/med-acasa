@@ -272,7 +272,7 @@ function Contact() {
                             ) : submitStatus === 'error' ? (
                                 <>
                                     <AlertCircle size={18} />
-                                    Eroare — încearcă din nou
+                                    Eroare: încearcă din nou
                                 </>
                             ) : (
                                 <>

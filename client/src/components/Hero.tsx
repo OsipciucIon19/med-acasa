@@ -62,7 +62,7 @@ function Hero() {
                         </h1>
 
                         <div
-                            className={`flex items-start gap-3 mb-7 sm:mb-9 ${
+                            className={`flex items-center gap-3 mb-7 sm:mb-9 ${
                                 isVisible ? 'animate-fade-up' : 'opacity-0'
                             }`}
                             style={{animationDelay: '240ms'}}
@@ -118,10 +118,16 @@ function Hero() {
 
                             <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-teal-100 to-blue-100">
                                 <img
-                                    src="https://images.pexels.com/photos/7551617/pexels-photo-7551617.jpeg?auto=compress&cs=tinysrgb&w=1200&h=900&fit=crop"
+                                    src="/img/hero.jpg"
+                                    srcSet="/img/hero-sm.jpg 640w, /img/hero.jpg 1200w"
+                                    sizes="(max-width: 1024px) 100vw, 50vw"
                                     alt="Asistentă medicală îngrijind o pacientă acasă"
+                                    width={1200}
+                                    height={1803}
                                     className="w-full h-72 sm:h-96 lg:h-[540px] object-cover hover:scale-[1.03] transition-transform duration-700"
                                     loading="eager"
+                                    decoding="async"
+                                    fetchPriority="high"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/30 via-transparent to-transparent pointer-events-none"></div>
                             </div>

@@ -1,20 +1,29 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import FloatingCTA from './components/FloatingCTA';
 import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
-import Privacy from './pages/Privacy';
-import Terms from './pages/Terms';
-import NotFound from './pages/NotFound';
+
+const Privacy = lazy(() => import('./pages/Privacy'));
+const Terms = lazy(() => import('./pages/Terms'));
+const NotFound = lazy(() => import('./pages/NotFound'));
+const FloatingCTA = lazy(() => import('./components/FloatingCTA'));
 
 function App() {
     const [scrollY, setScrollY] = useState(0);
 
     useEffect(() => {
-        const handleScroll = () => setScrollY(window.scrollY);
-        window.addEventListener('scroll', handleScroll);
+        let ticking = false;
+        const handleScroll = () => {
+            if (ticking) return;
+            ticking = true;
+            window.requestAnimationFrame(() => {
+                setScrollY(window.scrollY);
+                ticking = false;
+            });
+        };
+        window.addEventListener('scroll', handleScroll, { passive: true });
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
@@ -23,15 +32,19 @@ function App() {
             <ScrollToTop />
             <Header scrollY={scrollY} />
             <main className="flex-1">
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/confidentialitate" element={<Privacy />} />
-                    <Route path="/termeni" element={<Terms />} />
-                    <Route path="*" element={<NotFound />} />
-                </Routes>
+                <Suspense fallback={null}>
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/confidentialitate" element={<Privacy />} />
+                        <Route path="/termeni" element={<Terms />} />
+                        <Route path="*" element={<NotFound />} />
+                    </Routes>
+                </Suspense>
             </main>
             <Footer />
-            <FloatingCTA />
+            <Suspense fallback={null}>
+                <FloatingCTA />
+            </Suspense>
         </div>
     );
 }
