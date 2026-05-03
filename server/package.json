@@ -1,0 +1,20 @@
+{
+  "name": "med-acasa-server",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json && mkdir -p dist/shared && cp ../shared/appointments.js dist/shared/appointments.js && cp ../shared/package.json dist/shared/package.json",
+    "dev": "node --watch dist/server/src/server.js",
+    "start": "node dist/server/src/server.js",
+    "test": "npm run build && node --test dist/server/test/*.test.js",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@aws-sdk/client-ses": "^3.800.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.10",
+    "typescript": "^5.7.2"
+  }
+}
